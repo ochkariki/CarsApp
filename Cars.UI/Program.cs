@@ -13,7 +13,7 @@ namespace Cars.UI
         {
             using (var c = new Context())
             {
-                var result = c.Manufacturers.ToList();
+                var result = c.Manufacturers.Where(a=> a.Name.StartsWith("R")).ToList();
 
             }
         }
