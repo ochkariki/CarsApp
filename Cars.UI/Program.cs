@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Cars.Data;
 
 namespace Cars.UI
 {
@@ -10,7 +11,11 @@ namespace Cars.UI
     {
         static void Main(string[] args)
         {
+            using (var c = new Context())
+            {
+                var result = c.Manufacturers.ToList();
 
+            }
         }
     }
 }
