@@ -11,7 +11,7 @@ namespace Cars.Data
     {
         public DbSet<Manufacturer> Manufacturers { get; set; }
         public DbSet<Model> Models { get; set; }
-        public DbSet<Car> C { get; set; }
+        public DbSet<Car> Cars { get; set; }
 
         public Context() : base("localsql")
         {
